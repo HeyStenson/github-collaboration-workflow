@@ -13,7 +13,7 @@ Imagine you, Jessica, and Sam want to build an app together. Jessica bootstraps 
 
 Your first task is to add user authentication. At the same time, Jessica is doing API integration and Sam is writing tests.
 
-1. You clone the project Jessica pushed up to GitHub after she makes you a collaborator. This creates a local repository with a `remote` called `origin` which is the original repo Jessica created and technically belongs to Jessica. From within your local repository, you can check the URLs of all remote repos it's connected to.
+1. You clone the project Jessica pushed up to GitHub after she makes you a collaborator. This creates a local repository with a `remote` called `origin`, which is the original repo Jessica created and technically belongs to Jessica. From within your local repository, you can check the URLs of all remote repos it's connected to.
 
   ```zsh
   ➜  git remote -v
@@ -51,11 +51,11 @@ Your first task is to add user authentication. At the same time, Jessica is doin
   ➜  git push origin auth
   ```
 
-6. Now navigate in your browser to the original remote repo's GitHub page. GitHub will detect that you just pushed a new branch and give you a prompt to make a pull request for that branch. Go for it!
+6. In your browser, head to the original remote repo's GitHub page. GitHub will detect that you just pushed a new branch and give you a prompt to make a pull request for that branch. Go for it!
 
   ![pull-request](https://cloud.githubusercontent.com/assets/7833470/12072813/76841710-b0aa-11e5-9644-4f840081c986.png)
 
-  This will notify all the collaborators that you just made a pull request, and it's waiting to be merged. The next step is for someone else on the team to review your code and suggest any changes needed before merging it in.
+  This will notify all the collaborators that you just made a pull request, and it's waiting to be merged. The next step is for someone else on the team to review your code and suggest any changes needed before merging it in. Your team will agree on the workflow for this as part of the planning process.
 
 7. If there are no other pull requests in the queue, one of your team members can merge your pull request cleanly with the most up-to-date `master`. But if your team merges other pull requests before yours, those pull requests might create merge conflicts with yours.
 
@@ -85,6 +85,24 @@ Your first task is to add user authentication. At the same time, Jessica is doin
   ![resolve-conflict](https://cloud.githubusercontent.com/assets/7833470/12072819/898221a4-b0aa-11e5-84ec-f6a1bedaa6de.png)
 
   Your feature branch is now ready to be pushed up to GitHub, without conflicts!
+  
+## Tips for Working in Teams
+1. Communicate,communicate, communicate! Before you start coding, it's important for your team to discuss roles, expectations, and timetables. Don't assume that everyone is on the same page or that problems will magically resolve themselves - take the time to plan first, and you'll be glad you did later.
+
+2. As part of your planning process, select a GitHub master. This person will be the owner of the GitHub repository, and will add everyone else in the team as collaborators. 
+
+3. Set guidelines for merging pull requests. How many people should review the pull requests before they're merged? Who will be in charge of merging pull requests? What branch should they be merged into? 
+
+4. Consider making a "develop" or "staging" branch to merge into instead of merging into the master branch. Once your app is complete, then you can merge your development branch into the master branch. 
+
+5. Make very descriptive commit messages! The team members who are reading them should be able to tell at a glance what you were working on.
+
+6. Clearly delineate who's working on what. Things will go much more smoothly if team members work on features that don't overlap. This is especially important if you're not all working in the same spot. It's easy to check in on one another when you're in the same room, but once people spread out it's not uncommon for wires to get crossed! 
+
+7. Don't have multiple team members working on the same feature branch at one time. If you're pair programming with someone, only use one computer to avoid having differing code on the same branch. 
+
+8. When merge conflicts arise, it's not up to the GitHub master to resolve them. It's up to the individual contributor! Follow the steps for [resolving merge conflicts locally](#resolving-merge-conflicts-locally), make sure to delete any merge junk from your code, and then push your cleaned-up branch to GitHub.  
+  
 
 ## Resources
 
