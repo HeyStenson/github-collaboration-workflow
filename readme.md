@@ -60,6 +60,8 @@ Your first task is to add user authentication. At the same time, Jessica is doin
 7. If there are no other pull requests in the queue, one of your team members can merge your pull request cleanly with the most up-to-date `master`. But if your team merges other pull requests before yours, those pull requests might create merge conflicts with yours.
 
   In that case, GitHub will show that merge conflicts exist and must be resolved locally. You'll want to repeat steps 3-5 to resolve the conflicts locally. Remember it's not up to the project "owner" to fix all the merge conflicts. (How could they do that? They didn't write your code!) Each branch owner is responsible to get a clean pull request queued up. 
+  
+8. Once the feature branch has been moved into the `master` branch, you can delete the feature branch on GitHub. If you really need to, you can restore the deleted branch. It's up to the team member to delete the branch locally if desired.   
 
 ## Resolving Merge Conflicts Locally
 1. First, and most importantly: Don't panic! Communication between team members will help you avoid them, but merge conflicts will inevitably happen. They're not the end of the world! Follow the rest of these steps to resolve conflicts. 
